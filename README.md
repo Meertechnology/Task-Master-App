@@ -1,11 +1,9 @@
-<h1>Task Master</h1>
-<i>a task tracker app</i>
+<h1>Task Master App</h1>
+<i>a task tracker tool</i>
 
 <h2>Introduction</h2>
 
 Task Master is a comprehensive task management solution designed to help you efficiently organize and track your daily tasks. Whether you need to add, view, update, or delete tasks, Task Master has got you covered. Built with React for the front end and MongoDB for the back end, Task Master offers a seamless experience for managing your to-do lists and staying on top of your responsibilities.
-
-
 
 <h2>Installation</h2>
 
