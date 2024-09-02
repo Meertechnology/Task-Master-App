@@ -1,0 +1,21 @@
+/* index.css */
+
+/* Add some basic margin and padding */
+body {
+    padding-top: 20px;
+    /* Set a gradient background */
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    /* Apply a standard font family for better readability */
+    font-family: 'Times New Roman', serif;
+  }
+
+  
+  .container {
+    max-width: 800px;
+   
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  

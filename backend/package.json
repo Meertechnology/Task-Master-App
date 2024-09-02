@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for task-master-app by meertech",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meertechnology/TaskMaster.git"
+  },
+  "author": "MeerTech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meertechnology/TaskMaster/issues"
+  },
+  "homepage": "https://github.com/Meertechnology/TaskMaster#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.5.4",
+    "nodemon": "^3.1.4"
+  }
+}
