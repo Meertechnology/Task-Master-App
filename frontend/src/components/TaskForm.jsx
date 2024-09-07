@@ -1,5 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { TaskContext } from '../context/TaskContext';
+import './index.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
 
 const TaskForm = () => {
   const { addTask } = useContext(TaskContext);
@@ -19,6 +22,12 @@ const TaskForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="mb-4">
+      <div className="first-title" >
+      <h1>Add new Task</h1>
+      </div>
+      <button type="button" className="icon-button">
+        <FontAwesomeIcon icon={faBell} />
+      </button>
       <div className="form-group">
         <input
           type="text"
@@ -55,8 +64,8 @@ const TaskForm = () => {
           onChange={(e) => setDueDate(e.target.value)}
         />
       </div>
-      <button type="submit" className="btn btn-success">
-        <i className="bi bi-plus-circle"></i> Add Task
+      <button type="submit" className="btn-success">
+      Add Task
       </button>
     </form>
   );
