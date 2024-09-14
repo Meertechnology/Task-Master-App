@@ -1,28 +1,27 @@
 import React, { useContext } from 'react';
-import TaskItem from './TaskItem';
 import { TaskContext } from '../context/TaskContext';
 
 const TaskList = () => {
-  const { tasks, removeTask, updateTask } = useContext(TaskContext);
+  const { tasks } = useContext(TaskContext); // Get tasks from context
 
-  const handleDelete = (id) => {
-    removeTask(id);
-  };
+  if (!tasks || tasks.length === 0) {
+    return <p>No tasks available</p>;
+  }
 
-  const handleEdit = (task) => {
-    updateTask(task);
-  };
-  
   return (
-    <div className="task-list">
-      {tasks.map((task) => (
-        <TaskItem
-          key={task._id}
-          task={task}
-          onDelete={handleDelete}
-          onEdit={handleEdit}
-        />
-      ))}
+    <div>
+      <h1>Task List</h1>
+      <ul>
+        {tasks.map((task) => (
+          <li key={task._id}>
+            <h2>{task.title}</h2>
+            <p>Description: {task.description}</p>
+            <p>Category: {task.category}</p>
+            <p>Due Date: {new Date(task.dueDate).toLocaleDateString()}</p>
+            <p>Status: {task.completed ? 'Completed' : 'Pending'}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
