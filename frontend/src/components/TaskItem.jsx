@@ -7,16 +7,10 @@ const TaskItem = ({ task, onDelete, onEdit }) => {
         <h5 className="card-title">
           {task.title}
           <span className="float-right">
-            <button
-              className="btn btn-primary btn-sm mr-2"
-              onClick={() => onEdit(task)}
-            >
+            <button className="btn btn-primary btn-sm mr-2" onClick={() => onEdit(task)}>
               <i className="bi bi-pencil"></i> Edit
             </button>
-            <button
-              className="btn btn-danger btn-sm"
-              onClick={() => onDelete(task._id)}
-            >
+            <button className="btn btn-danger btn-sm" onClick={() => onDelete(task._id)}>
               <i className="bi bi-trash"></i> Delete
             </button>
           </span>

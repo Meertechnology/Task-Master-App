@@ -1,23 +1,22 @@
-import React, { useContext } from 'react';
-import { TaskContext } from '../context/TaskContext';  // Ensure correct path to TaskContext
+import axios from 'axios';
 
-const TaskList = () => {
-  const { tasks, removeTask, updateTask } = useContext(TaskContext);
+const API_URL = '/api/tasks';
 
-  return (
-    <div>
-      {tasks.map((task) => (
-        <div key={task._id}>
-          <h3>{task.title}</h3>
-          <p>{task.description}</p>
-          <button onClick={() => removeTask(task._id)}>Delete</button>
-          <button onClick={() => updateTask({ ...task, completed: !task.completed })}>
-            {task.completed ? 'Mark as Incomplete' : 'Mark as Complete'}
-          </button>
-        </div>
-      ))}
-    </div>
-  );
+export const getTasks = async () => {
+  const response = await axios.get(API_URL);
+  return response.data;
 };
 
-export default TaskList;
+export const createTask = async (taskData) => {
+  const response = await axios.post(API_URL, taskData);
+  return response.data;
+};
+
+export const updateTask = async (id, taskData) => {
+  const response = await axios.put(`${API_URL}/${id}`, taskData);
+  return response.data;
+};
+
+export const deleteTask = async (id) => {
+  await axios.delete(`${API_URL}/${id}`);
+};
