@@ -87,9 +87,11 @@ const LandingPage = () => {
       <h1 style={textStyles}>Welcome</h1>
       <h2 style={textStyles}>To</h2>
       <h3 style={textStyles}>
-        Task <span style={{ color: '#007bff' }}>Master</span> App
+        Task <span style={{ color: '#007bff' }}>Master App</span>
       </h3>
+      <br></br>
       <p>A Task Tracker Tool</p>
+      <br></br>
       <button 
         onClick={handleGetStarted} 
         style={buttonStyles}
