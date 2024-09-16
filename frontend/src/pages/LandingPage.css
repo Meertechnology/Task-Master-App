@@ -1,0 +1,82 @@
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f7fd; /* Light blue/gray background */
+}
+.landing-page {
+  background-color: red; /* Set a very visible background to test */
+  height: 100vh;
+}
+
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 span {
+  color: #007bff; /* Highlighted color for "Master" */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Circle design for the background elements */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #2979ff; /* Base blue color */
+  z-index: -1;
+}
+
+.top-left {
+  width: 400px;
+  height: 400px;
+  top: -150px;
+  left: -150px;
+}
+
+.bottom-right {
+  background-color: #2979ff; /* Blue color */
+  border-radius: 50%;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  bottom: -200px;
+  right: -200px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  right: -100px;
+  background-color: #3d91ff;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  right: -50px;
+  background-color: #5aa8ff;
+}
