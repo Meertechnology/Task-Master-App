@@ -7,7 +7,7 @@ Task Master is a comprehensive task management solution designed to help you eff
 
 <h2>Screenshot</h2>
 
-![Task Tracker Screenshot](./frontend/Landing_page_3.webp)
+![Task Tracker Screenshot](./frontend/image.png)
 ![Task Tracker Screenshot](./frontend/Task_Tracker_4.webp)
 
 <h2>Installation</h2>
