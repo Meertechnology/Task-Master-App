@@ -1,5 +1,5 @@
 echo "Swictching to branch master"
-git checkoutmaster
+git checkout master
 
 echo "Building app..."
 npm run build
