@@ -11,7 +11,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <h1>Welcome to Task Master App</h1>
-      <p>A Task Tracker Tool</p>
+      <p> <i> A Task Tracker Tool</i></p>
       <button onClick={handleGetStarted} className="btn btn-primary">
         Get Started
       </button>

@@ -51,12 +51,73 @@
 
 /* landing-Page*/
 /**********************************************************************************************/
-.landing-page{
-    position: center;
+/* Container for landing page */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background color for contrast */
+    flex-direction: column;
     text-align: center;
-    margin-top: 18%;
-    background-color: white;
 }
+
+/* Image styling */
+.landing-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: -15px;
+}
+
+h3 {
+    font-size: 2.5em;
+    color: #000;
+}
+
+h3 span {
+    color: #007bff; /* Blue color for 'Master' */
+}
+
+/* Paragraph for description */
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3;
+}
+
 .content{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
